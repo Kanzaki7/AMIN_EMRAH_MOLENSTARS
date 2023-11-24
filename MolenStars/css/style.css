@@ -17,7 +17,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 100px;
-    height: 800px;
+    height: 900px;
 }
 
 
@@ -88,10 +88,22 @@ body {
 
 .sec1-div2-divs-contenu-ul {
     color: rgb(50, 150, 184);
+    list-style-type: none;
+}
+
+.sec1-div2-divs-contenu-ul li::before {
+    content: "✔"; 
+    margin: 5px;
+    background-color: aqua;
+    border-radius: 50%;
 }
 
 .sec1-h2 {
     line-height: 0.5;
+}
+
+#partners {
+    color: rgb(50, 150, 184);;
 }
 
 #title-sec1 {
@@ -106,14 +118,24 @@ body {
 .main-div-slider {
     display: flex;
     gap: 25px;
+    flex-wrap: wrap;
 }
 
 .slider {
-    border-radius: 5px;
+    transition: all 1s;
 }
 
 .div-slider {
     background-color: rgba(23, 23, 125, 0.388);
     border-radius: 10px;
-    padding: 15px;
+    padding: 35px;
+}
+
+.div-slider:hover {
+    background-color: aqua;
+}
+
+.div-slider:hover .slider{
+    transform: translateY(-10px);
+    filter: brightness(0) invert(1);
 }

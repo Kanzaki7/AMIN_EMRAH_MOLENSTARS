@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     height: 100vh;
-    width: 100vW;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
-/* begin of the navbar */
+
+/* beginning of the navbar */
 nav{
     display: flex;   
 }
@@ -22,14 +24,14 @@ header{
 .divLeftNavbar{
     height: 30%;
     width: 35%;
-
     display: flex;
     justify-content: end;
     padding-top: 50px;
 }
+
 .logoNavbar{
-    height: 120px;
-    width: 150px;
+    height: 100px;
+    width: 130px;
 }
 
 .divRightNavbar{
@@ -99,7 +101,8 @@ begin of the text header */
 }
 
 .rightBannerLogo{
-
+    height: 400px;
+    width: 500px;
 }
 
 .firstTitle{
@@ -128,6 +131,10 @@ begin of the text header */
 .buttonHeader:hover{
     background-color:#09d4ef;
 
+}
+
+.parentButton {
+    display: flex;
 }
 
 
@@ -270,10 +277,10 @@ begin of the text header */
 }
 
 .div-slider {
-    background-color: rgba(23, 23, 125, 0.388);
+    background-color: #17256e;
     border-radius: 10px;
-    width: 200px;
-    height: 200px;
+    width: 130px;
+    height: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -289,10 +296,93 @@ begin of the text header */
 }
 
 
-@media screen and (max-width: 600px) {
+
+/* media queries */
+
+/* mobile S */
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    /* header */
+
+    header {
+        width: 100%;
+        height: auto;
+        gap: 50px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .divLeftNavbar {
+        margin-right: 13%;
+    }
+
+    .divRightNavbar {
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        width: 25%;
+        margin-left: 15%;
+    }
+
+    .logoNavbar {
+        width: 55px;
+        height: 50px;
+    }
+
+    .divParentHeader {
+        flex-direction: column;
+        margin-right: 35%;
+        gap: 20px;
+    }
+
+    .leftHeader {
+        width: 100%;
+        
+    }
+
+    .rightBannerLogo {
+        width: 80%;
+        height: 60%;
+        margin-left: 55%;
+    }
+
+    .firstTitle {
+        font-size: 25px;
+    }
+
+    .headerText {
+        font-size: 17px;
+    }
+
+    .buttonHeader {
+        margin: 3px;
+    }
+
+    .parentButton {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttonNavbar {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+
+    /* section 1 */
+
+    /* .main {
+        width: 100%;
+        height: 65%;
+    } */
+
     .section1 {
         width: 100%;
-        height: 15%;
+        height: auto;
         flex-direction: column;
         background-size: 80px;
     }
@@ -303,7 +393,7 @@ begin of the text header */
     }
 
     .div-slider {
-        width: 65%;
+        width: 55%;
     }
     
     .main-div-slider {
@@ -338,16 +428,363 @@ begin of the text header */
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
-    .section1 {
+
+/* mobile M */
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+
+    /* header */
+
+    header {
         width: 100%;
-        height: 20%;
+        height: auto;
+    }
+
+    .rightBannerLogo {
+        width: 200px;
+        height: 150%;
+    }
+
+    .rightHeader {
+        margin-left: 40%;
+    }
+
+    .divParentHeader {
+        flex-direction: column;
+        margin-right: 35%;
+        gap: 20px;
+
+    }
+
+    .firstTitle {
+        font-size: 20px;
+    }
+
+    .logoNavbar {
+        width: 55px;
+        height: 50px;
+    }
+
+    .divRightNavbar {
+        width: 100%;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+
+        /* margin-left: 20%; */
+    }
+
+    .divLeftNavbar {
+        align-items: center;
+        margin-left: 22%;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .buttonNavbar {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .buttonHeader {
+        margin: 3px;
+    }
+
+    .parentButton {
+        display: flex;
         flex-direction: column;
     }
 
+    .buttonHeader {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .leftHeader {
+        width: 100%;
+    }
+
+    /* section 1*/
+
+    .section1 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        background-size: 80px;
+    }
+
+    .sec1-div2 {
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    #girl-with-laptop {
+        margin-left: 10%;
+        width: 75%;
+        height: 55%;
+    }
+
     .div-slider {
-        width: 40%;
+        width: 50%;
+    }
+
+    .main-div-slider {
+        justify-content: center;
+    }
+
+    .title-sec1-div2-h2 {
+        font-size: 25px;
+    }
+
+    .fontpsvg {
+        font-size: 12px;
+    }
+
+    .sec1-div2-divs {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+
+}
+
+/* mobile L */
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    /* header */
+
+    header {
+        width: 100%;
+        height: auto;
+    }
+    
+    .rightBannerLogo {
+        width: 200px;
+        height: 150%;
+    }
+    
+    .rightHeader {
+        margin-left: 45%;
+    }
+    
+    .divParentHeader {
+        flex-direction: column;
+        margin-right: 35%;
+        gap: 20px;
+    
+    }
+    
+    .firstTitle {
+        font-size: 25px;
+    }
+    
+    .logoNavbar {
+        width: 55px;
+        height: 50px;
+    }
+    
+    .divRightNavbar {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        /* margin-left: 20%; */
+    }
+    
+    .divLeftNavbar {
+        align-items: center;
+        margin-left: 20%;
+    }
+    
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
+    .buttonNavbar {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .buttonHeader {
+        margin: 3px;
+    }
+    
+    .parentButton {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .buttonHeader {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .leftHeader {
+           width: 100%;
+    }
+    
+    /* section 1*/
+    
+    .section1 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        background-size: 80px;
+    }
+    
+    .sec1-div2 {
+        flex-direction: column;
+        width: 90%;
+    }
+        
+    #girl-with-laptop {
+        margin-left: 10%;
+        width: 75%;
+        height: 55%;
+    }
+    
+    .div-slider {
+        width: 48%;
+    }
+    
+    .main-div-slider {
+        justify-content: center;
+    }
+    
+    .title-sec1-div2-h2 {
+        font-size: 25px;
+    }
+    
+    .fontpsvg {
+        font-size: 12px;
+    }
+    
+    .sec1-div2-divs {
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+/* tablette */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* header */
+
+    header {
+        width: 100%;
+        height: auto;
+    }
+    
+    .logoNavbar {
+        width: 75px;
+        height: 60px;
+    }
+
+    nav {
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .divLeftNavbar{
+        width: 5%;
+        justify-content: flex-start;
+    }
+
+    .divRightNavbar{
+        width: 95%;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .rightBannerLogo {
+        width: 70%;
+        height: 60%;
+    }
+
+    .firstTitle {
+        font-size: 20px;
+    }
+
+    .headerText {
+        font-size: 14px;
+    }
+
+    .parentButton {
+        flex-direction: column;
+        margin-bottom: 20%;
+        gap: 10px;
+    }
+
+    
+    /* section 1*/
+    
+    .section1 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        background-size: 80px;
+    }
+    
+    .sec1-div2 {
+        flex-direction: column;
+        width: 90%;
+    }
+        
+    #girl-with-laptop {
+        margin-left: 20%;
+        width: 50%;
+        height: 35%;
+    }
+    
+    .div-slider {
+        width: 35%;
+    }
+    
+    .main-div-slider {
+        justify-content: center;
+    }
+    
+    .sec1-div2-divs {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .sec1-div2-divs-content {
+        align-items: flex-start;
     }
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+    .div-slider {
+        width: 130px;
+        height: 130px;
+    }
+
+    #girl-with-laptop {
+        width: 400px;
+        height: 350px;
+    }
+
+    .sec1-div2 {
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+    }
+
+    .fontpsvg {
+        font-size: 13px;
+    }
+
+    .sec1-div2-divs-content {
+        align-items: flex-start;
+    }
+
+}

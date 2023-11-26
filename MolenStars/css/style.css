@@ -304,7 +304,7 @@ begin of the text header */
 
 /* debut de la 2 eme section */
 
-/* .section2{
+.section2{
     height: 500px;
     background-image: url(../Assets/images/banner-overlay-img.png) ;
     background-size: cover;
@@ -379,7 +379,7 @@ begin of the text header */
 .buttonSection2:hover{
     background-color: white;
     color: #09d4ef;
-} */
+}
 
 /* fin de la 2 eme section  */
 

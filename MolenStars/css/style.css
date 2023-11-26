@@ -300,6 +300,89 @@ begin of the text header */
 }
 
 
+/* fin de la 1er section */
+
+/* debut de la 2 eme section */
+
+.section2{
+    height: 500px;
+    background-image: url(../Assets/images/banner-overlay-img.png) ;
+    background-size: cover;
+    background-color: #0b1e59;
+}
+
+.divTopSection2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textTitle1{
+    color:#3e92c2 ;
+    font-size: 15px;
+}
+
+.titleSection2{
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.parentSection2{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.folderSection2{
+    background-color:#17256e ;
+    border-radius: 15px;
+    width: 200px;
+    height: 300px;
+    padding-left: 30px;
+    padding-top: 25px
+    
+}
+
+.logoSection2{
+    height: 40px;
+    width: 40px;
+}
+
+.underTitleSection2{
+    color: white;
+}
+
+.textFolderSection2{
+    color: #3e4f95;
+}
+
+.buttonSection2{
+    border: 0 solid white;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #09d4ef;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.divButton{
+    display: flex;
+    justify-content: center;
+}
+
+.buttonSection2:hover{
+    background-color: white;
+    color: #09d4ef;
+}
+
+/* fin de la 2 eme section  */
+
 
 /* section 4 */
 
@@ -1170,6 +1253,127 @@ footer {
 
     .footer-div1 {
         flex-direction: column;
+        align-items: flex-start;
+        gap: 80px;
+    }
+
+    .logo-img {
+        width: 40%;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+
+    .copywright {
+        font-size: 14px;
+    }
+
+    .flex-checkbox {
+        margin-bottom: 40px;
+    }
+
+
+}
+
+
+
+/* mobile L */
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    /* header */
+
+    header {
+        width: 100%;
+        height: auto;
+    }
+
+    .rightBannerLogo {
+        width: 200px;
+        height: 150%;
+    }
+
+    .rightHeader {
+        margin-left: 45%;
+    }
+
+    .divParentHeader {
+        flex-direction: column;
+        margin-right: 35%;
+        gap: 20px;
+
+    }
+
+    .firstTitle {
+        font-size: 25px;
+    }
+
+    .logoNavbar {
+        width: 55px;
+        height: 50px;
+    }
+
+    .divRightNavbar {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        /* margin-left: 20%; */
+    }
+
+    .divLeftNavbar {
+        align-items: center;
+        margin-left: 20%;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .buttonNavbar {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .buttonHeader {
+        margin: 3px;
+    }
+
+    .parentButton {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttonHeader {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .leftHeader {
+           width: 100%;
+    }
+
+    /* section 1*/
+
+    .section1 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        background-size: 80px;
+    }
+
+    .sec1-div2 {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #girl-with-laptop {
+        margin-left: 10%;
+        width: 75%;
+        height: 55%;
     }
 
     .div-slider {
@@ -1391,89 +1595,119 @@ footer {
     .div2-background {
         width: 40%;
     }
-}
-
-/* fin de la 1er section */
-
-/* debut de la 2 eme section */
-
-.section2{
-    background-image: url(../Assets/images/banner-overlay-img.png) ;
-    background-size: cover;
-    background-color: #0b1e59;
-    background-color: rgba(18,32,97,255);
-    margin: 0;
-    padding: 0;
-}
-
-.divTopSection2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.textTitle1{
-    color:#3e92c2 ;
-    font-size: 15px;
-}
-
-.titleSection2{
-    color: white;
-    margin: 0;
-    padding: 0;
-}
-
-.parentSection2{
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-}
-
-.folderSection2{
-    background-color:#17256e ;
-    border-radius: 15px;
-    width: 200px;
-    height: 300px;
-    padding-left: 30px;
-    padding-top: 25px
     
+    .form-input {
+        width: 85%;
+    }
+    
+    .form {
+        justify-content: center;
+        margin-left: 40px;
+    }
+    
+    #dots-png {
+        z-index: -1;
+    }
+    
+    .design {
+        margin-top: 140px;
+    }
+    
+    .design-a {
+        font-size: 11px;
+    }
+    
+    .workplace {
+        font-size: 16px;
+    }
+    
+    .read {
+        font-size: 12px;
+    }
+    
+    .section5-button {
+        margin-bottom: 15px;
+    }
+
+        /* footer */
+
+        footer {
+            width: 100%;
+            height: auto;
+        }
+    
+        .footer-div1 {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 80px;
+        }
+    
+        .logo-img {
+            width: 30%;
+        }
+    
+        .footer-text {
+            font-size: 15px;
+        }
+    
+        .copywright {
+            font-size: 14px;
+        }
+    
+        .flex-checkbox {
+            margin-bottom: 40px;
+        }
+
 }
 
-.logoSection2{
-    height: 40px;
-    width: 40px;
+/* laptop S */
+
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+
+    /* section 1 */
+
+    .div-slider {
+        width: 130px;
+        height: 130px;
+    }
+
+    #girl-with-laptop {
+        width: 400px;
+        height: 350px;
+    }
+
+    .sec1-div2 {
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+    }
+
+    .fontpsvg {
+        font-size: 13px;
+    }
+
+    .sec1-div2-divs-content {
+        align-items: flex-start;
+    }
+
+
+    /* section 5*/
+    
+    #dots-png {
+        z-index: -1;
+    }
+
+    /* footer */
+
+    footer {
+        width: 100%;
+        height: auto;
+    }
+    
+    .logo-img {
+        width: 30%;
+    }
 }
 
-.underTitleSection2{
-    color: white;
-}
 
-.textFolderSection2{
-    color: #3e4f95;
-}
 
-.buttonSection2{
-    border: 0 solid white;
-    border-radius: 25px;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: #09d4ef;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-}
-
-.divButton{
-    display: flex;
-    justify-content: center;
-}
-
-.buttonSection2:hover{
-    background-color: white;
-    color: #09d4ef;
-}
-
-/* fin de la 2 eme section  */

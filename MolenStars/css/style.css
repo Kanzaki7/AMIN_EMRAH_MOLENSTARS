@@ -48,6 +48,10 @@ header{
     text-decoration: none;
 }
 
+.textNavbar:hover{
+    text-decoration: underline;
+}
+
 
 .buttonNavbar{
     border: 0 solid white;
@@ -349,5 +353,55 @@ begin of the text header */
     .div-slider {
         width: 40%;
     }
+}
+
+.section2{
+    background-image: url(../Assets/images/banner-overlay-img.png) ;
+    background-size: cover;
+    background-color: #0b1e59;
+    background-color: rgba(18,32,97,255);
+    margin: 0;
+    padding: 0;
+}
+
+.divTopSection2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textTitle1{
+    color:#3e92c2 ;
+    font-size: 15px;
+}
+
+.titleSection2{
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.parentSection2{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.folderSection2{
+    background-color:#17256e ;
+    border-radius: 15px;
+    width: 200px;
+    height: 300px;
+    padding-left: 30px;
+    padding-top: 25px
+    
+}
+
+.logoSection2{
+    height: 40px;
+    width: 40px;
+
 }
 

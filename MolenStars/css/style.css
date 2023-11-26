@@ -1,4 +1,4 @@
-    body {
+body {
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -416,6 +416,7 @@ begin of the text header */
 
 .design-a {
     font-weight: lighter;
+    color: #a4a9b2;
 }
 
 .workplace {
@@ -447,13 +448,14 @@ begin of the text header */
 
 
 .form-input {
-    background: transparent;
+    background: none;
     border: 0;
     border: 1px solid #192561;
     border-radius: 5px;
     padding: 10px;
     width: 250px;
     position: relative;
+    color: #5c6db2;
 }
 
 .form {
@@ -518,6 +520,131 @@ input::placeholder {
     font-size: 33px;
 }
 
+
+/* footer */
+
+footer {
+    height: 600px;
+    background-image: url(../Assets/images/overly-img.png);
+    background-color: #122061;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-div1 {
+    height: 85%;
+    border-bottom: 1px solid #2e4193;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 150px;
+    flex-wrap: wrap;
+}
+
+.footer-div2 {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copywright {
+    color: #5c6db2;
+    font-weight: bold;
+}
+
+.footer-text {
+    line-height: 1.5;
+    color: #6073b7;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.logo-social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-a {
+    text-decoration: none;
+    color: #6073b7;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.p-title {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.address {
+    color: #6073b7;
+    line-height: 1.7;
+    font-weight: bolder;
+}
+
+#news-email {
+    background: none;
+    border: none;
+    width: 200px;
+    height: 50px;
+    color: #5c6db2;
+}
+
+.paperplane {
+    width: 235px;
+    height: 50px;
+    border: 1px solid #1f3287;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#terms {
+    color: #6073b7;
+}
+
+#terms-check {
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid #408eee;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+}
+
+.flex-checkbox {
+    display: flex;
+    gap: 10px;
+}
 
 
 
@@ -708,6 +835,37 @@ input::placeholder {
     .section5-button {
         margin-bottom: 15px;
     }
+
+
+    /* footer */
+
+    footer {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-div1 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 80px;
+    }
+
+    .logo-img {
+        width: 40%;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+
+    .copywright {
+        font-size: 14px;
+    }
+
+    .flex-checkbox {
+        margin-bottom: 40px;
+    }
+
 }
 
 
@@ -887,6 +1045,37 @@ input::placeholder {
     .section5-button {
         margin-bottom: 15px;
     }
+
+    /* footer */
+
+    footer {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-div1 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 80px;
+    }
+
+    .logo-img {
+        width: 40%;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+
+    .copywright {
+        font-size: 14px;
+    }
+
+    .flex-checkbox {
+        margin-bottom: 40px;
+    }
+
+
 }
 
 
@@ -1063,7 +1252,38 @@ input::placeholder {
     .section5-button {
         margin-bottom: 15px;
     }
+
+    /* footer */
+
+    footer {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-div1 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 80px;
+    }
+
+    .logo-img {
+        width: 50%;
+    }
+
+    .footer-text {
+        font-size: 17px;
+    }
+
+    .copywright {
+        font-size: 14px;
+    }
+
+    .flex-checkbox {
+        margin-bottom: 40px;
+    }
+
 }
+
 
 
 /* tablette */
@@ -1211,7 +1431,34 @@ input::placeholder {
         margin-bottom: 15px;
     }
 
+        /* footer */
 
+        footer {
+            width: 100%;
+            height: auto;
+        }
+    
+        .footer-div1 {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 80px;
+        }
+    
+        .logo-img {
+            width: 30%;
+        }
+    
+        .footer-text {
+            font-size: 15px;
+        }
+    
+        .copywright {
+            font-size: 14px;
+        }
+    
+        .flex-checkbox {
+            margin-bottom: 40px;
+        }
 
 }
 
@@ -1250,5 +1497,16 @@ input::placeholder {
     
     #dots-png {
         z-index: -1;
+    }
+
+    /* footer */
+
+    footer {
+        width: 100%;
+        height: auto;
+    }
+    
+    .logo-img {
+        width: 30%;
     }
 }

@@ -355,6 +355,10 @@ begin of the text header */
     }
 }
 
+/* fin de la 1er section */
+
+/* debut de la 2 eme section */
+
 .section2{
     background-image: url(../Assets/images/banner-overlay-img.png) ;
     background-size: cover;
@@ -434,3 +438,4 @@ begin of the text header */
     color: #09d4ef;
 }
 
+/* fin de la 2 eme section  */

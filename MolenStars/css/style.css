@@ -402,6 +402,35 @@ begin of the text header */
 .logoSection2{
     height: 40px;
     width: 40px;
+}
 
+.underTitleSection2{
+    color: white;
+}
+
+.textFolderSection2{
+    color: #3e4f95;
+}
+
+.buttonSection2{
+    border: 0 solid white;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #09d4ef;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.divButton{
+    display: flex;
+    justify-content: center;
+}
+
+.buttonSection2:hover{
+    background-color: white;
+    color: #09d4ef;
 }
 

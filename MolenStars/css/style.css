@@ -297,6 +297,117 @@ begin of the text header */
 
 
 
+/* section 4 */
+
+.section4 {
+    height: 600px;
+    background-image: url(../Assets/images/overly-img.png);
+    background-color: #122061;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.section4-card {
+    width: 220px;
+    height: 190px;
+    background-color: #17256e;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+
+}
+
+
+.section4-div1 {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.cyber-left {
+    width: 50px;
+    height: 50px;
+}
+
+.section4-div1-p1 {
+    font-size: 30px;
+    color: white;
+}
+
+.div1-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
+
+.section4-div1-p2 {
+    color: #5c70b9;
+    font-weight: bolder;
+}
+
+.section4-div2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section4-div2-divA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 0;
+}
+
+.stats {
+    font-size: 17px;
+    color: #226c9c;
+}
+
+.sec4-div2-ptitle {
+    font-size: 35px;
+    color: white;
+}
+
+.sec4-div2-ptitles {
+    line-height: 0.3;
+}
+
+.sec4-div2-p {
+    color: #5f6aa9;
+    line-height: 1.5;
+}
+
+.sec4-div2-a {
+    text-decoration: none;
+    color: white;
+    width: 130px;
+    height: 40px;
+    background-color: #0ad3ef;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section4-div2-divB {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
 
 
 

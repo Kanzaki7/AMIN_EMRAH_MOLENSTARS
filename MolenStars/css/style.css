@@ -491,6 +491,11 @@ begin of the text header */
     justify-content: center;
 }
 
+.sec4-div2-a:hover {
+    background-color: white;
+    color: #0ad3ef;
+}
+
 .section4-div2-divB {
     display: flex;
     flex-direction: column;
@@ -697,6 +702,11 @@ input::placeholder {
     background-color: #0ad3ef;
     border-radius: 30px;
     cursor: pointer;
+}
+
+.section5-button:hover {
+    background-color: white;
+    color: #0ad3ef;
 }
 
 #touch {

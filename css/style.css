@@ -309,7 +309,12 @@ begin of the text header */
     background-image: url(../Assets/images/banner-overlay-img.png) ;
     background-size: cover;
     background-color: #0b1e59;
+    display: flex;
+    flex-direction: column;
 }
+
+
+
 
 .divTopSection2{
     display: flex;
@@ -378,7 +383,7 @@ begin of the text header */
 
 .buttonSection2:hover{
     background-color: white;
-    color: #09d4ef;
+    color: #a5c7cb;
 }
 
 /* fin de la 2 eme section  */

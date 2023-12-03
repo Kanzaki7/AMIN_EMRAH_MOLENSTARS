@@ -10,12 +10,13 @@ body {
 /* beginning of the navbar */
 nav{
     display: flex;
+    position: relative;
 }
 
 header{
     background-image: url(../Assets/images/banner-overlay-img.png) ;
     background-size: cover;
-    background-color: #0b1e59;
+    background-color: #0a1650;
     display: flex;
     flex-direction: column;
     gap: 70px;
@@ -75,6 +76,18 @@ header{
     color: #09d4ef;
 }
 
+.menu {
+    font-size: 2.8rem;
+    cursor: pointer;
+    position: absolute;
+    right: 100px;
+    top: 95px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
 
 
 /* end of the navbar
@@ -757,65 +770,50 @@ begin of the text header */
     flex-wrap: wrap;
 }
 
-.div1-background {
-    height: 400px;
-    width: 400px;
-    border-radius: 5px;
-    /* background-image: url(../Assets/images/blog-post-img1.png);
-    background-size: contain;
-    background-repeat: no-repeat; */
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-size: 100%;
-    transition: ease 0.5s;
-}
+
 
 .div1-background {
-    height: 400px;
     width: 400px;
-    border-radius: 5px;
-    background-image: url(../Assets/images/blog-post-img2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-size: 100%;
-    transition: ease 0.5s;
+    height: 400px;
+    position: relative;
 }
 
 .div2-background {
-    height: 400px;
     width: 400px;
-    border-radius: 5px;
-    background-image: url(../Assets/images/blog-post-img2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-size: 100%;
-    transition: ease 0.5s;
+    height: 400px;
+    position: relative;
 }
 
 
-
-.div1-background:hover img {
-    transform: scale(1.1);
-    transform: rotate(2deg);
+.img-hover-zoom {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-
-.div1-background:hover img {
-    transform: scale(O.9);
-    transform: rotate(-2deg);
+.zoom-img {
+    width: 400px;
+    height: 400px;
+    z-index: -1;
 }
+
+/* Zoom-n-rotate Container */
+.img-hover-zoom--zoom-n-rotate img {
+    transition: transform .4s ease-in-out;
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom--zoom-n-rotate:hover img {
+    transform: scale(1.1) rotate(3deg);
+
+  }
+
 
 
 .a-image {
     text-decoration: none;
     color: white;
+    z-index: 2;
 }
 
 .a-image:hover {
@@ -825,20 +823,29 @@ begin of the text header */
 .images-a {
     margin-left: 20px;
     z-index: 2;
+    position: absolute;
+    width: 100%;
 }
 
-.design {
-    margin-top: 210px;
-}
+
 
 .design-a {
     font-weight: lighter;
     color: #a4a9b2;
+    position: absolute;
+    top: -155px;
 }
 
 .workplace {
     font-size: 23px;
     font-weight: bolder;
+    position: absolute;
+    top: -125px;
+}
+
+.read {
+    position: absolute;
+    top: -50px;
 }
 
 .section5-div2 {
@@ -968,7 +975,16 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    margin-top: 150px;
+    margin-top: 115px;
+    flex-wrap: wrap;
+}
+
+.majordivfooter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
     flex-wrap: wrap;
 }
 
@@ -979,16 +995,15 @@ footer {
     align-items: center;
 }
 
+
 .copywright {
     color: #5c6db2;
-    font-weight: bold;
 }
 
 .footer-text {
     line-height: 1.5;
     color: #6073b7;
     font-size: 17px;
-    font-weight: bold;
 }
 
 .footer-about {
@@ -1000,8 +1015,19 @@ footer {
 .footer-services {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 15px;
+}
+
+.servicescontent {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
+}
+
+.address {
+    margin: 0;
+    margin-top: 7px;
+    padding: 0;
 }
 
 .footer-newsletter {
@@ -1012,26 +1038,25 @@ footer {
 
 .logo-social {
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 .footer-a {
     text-decoration: none;
     color: #6073b7;
     font-size: 17px;
-    font-weight: bold;
 }
 
 .p-title {
     color: white;
     font-size: 18px;
-    font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 
 .address {
     color: #6073b7;
     line-height: 1.7;
-    font-weight: bolder;
 }
 
 #news-email {
@@ -1096,8 +1121,30 @@ footer {
     }
 
     .divLeftNavbar {
-        margin-right: 13%;
+        position: absolute;
+        left: -20px;
+        top: -20px;
     }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 35px;
+    }
+
+    #x {
+        display: none;
+    }
+
+    #check:checked~.menu #burger {
+        display: none;
+    }
+
+    #check:checked~.menu #x {
+        display: block;
+    }
+
 
     .divRightNavbar {
         justify-content: center;
@@ -1105,12 +1152,20 @@ footer {
         margin-top: 5%;
         width: 25%;
         margin-left: 15%;
+        height: 0;
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    #check:checked~.divRightNavbar {
+        height: 20%;
     }
 
     .logoNavbar {
         width: 55px;
         height: 50px;
     }
+
 
     .divParentHeader {
         flex-direction: column;
@@ -1169,6 +1224,7 @@ footer {
     .sec1-div2 {
         flex-direction: column;
         width: 90%;
+        margin-bottom: 80px;
     }
 
     .div-slider {
@@ -1293,19 +1349,39 @@ footer {
 
     .div-background {
         justify-content: center;
+        width: 95%;
     }
 
     .div1-background {
         width: 90%;
-        margin-left: 15px;
+        height: 90%;
     }
 
     .div2-background {
         width: 90%;
+        height: 90%;
+    }
+
+    .zoom-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .design-a {
+        top: -250px;
+    }
+
+    .workplace {
+        width: 90%;
+        top: -110px;
     }
 
     .form-input {
-        width: 80%;
+        width: 85%;
+    }
+
+    #message {
+        width: 90%;
     }
 
     .form {
@@ -1351,6 +1427,21 @@ footer {
         gap: 80px;
     }
 
+    .footer-about {
+        margin-right: 160px;
+    }
+
+    .footer-services {
+        margin-right: 60px;
+    }
+
+
+    .logo-p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .logo-img {
         width: 40%;
     }
@@ -1382,6 +1473,54 @@ footer {
         height: auto;
     }
 
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .divLeftNavbar {
+        position: absolute;
+        left: -120px;
+        top: 5px;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 35px;
+    }
+
+    #x {
+        display: none;
+    }
+
+    #check:checked~.menu #burger {
+        display: none;
+    }
+
+    #check:checked~.menu #x {
+        display: block;
+    }
+
+
+    .divRightNavbar {
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        width: 25%;
+        margin-left: 15%;
+        height: 0px;
+        overflow: hidden;
+        transition: .3s ease;
+        display: none;
+    }
+
+    #check:checked~.divRightNavbar {
+        height: 20%;
+    }
+
     .rightBannerLogo {
         width: 200px;
         height: 150%;
@@ -1395,7 +1534,7 @@ footer {
         flex-direction: column;
         margin-right: 35%;
         gap: 20px;
-
+        margin-top: 100px;
     }
 
     .firstTitle {
@@ -1462,6 +1601,7 @@ footer {
     .sec1-div2 {
         flex-direction: column;
         width: 90%;
+        margin-bottom: 80px;
     }
 
     #girl-with-laptop {
@@ -1488,6 +1628,10 @@ footer {
 
     .sec1-div2-divs {
         justify-content: center;
+        align-items: flex-start;
+    }
+
+    .sec1-div2-divs-content {
         align-items: flex-start;
     }
 
@@ -1576,19 +1720,39 @@ footer {
     
     .div-background {
         justify-content: center;
+        width: 95%;
     }
-    
+
     .div1-background {
         width: 90%;
-        margin-left: 15px;
+        height: 90%;
     }
-    
+
     .div2-background {
         width: 90%;
+        height: 90%;
+    }
+
+    .zoom-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .design-a {
+        top: -280px;
+    }
+
+    .workplace {
+        width: 90%;
+        top: -100px;
     }
     
     .form-input {
-        width: 80%;
+        width: 85%;
+    }
+
+    #message {
+        width: 90%;
     }
     
     .form {
@@ -1633,6 +1797,26 @@ footer {
         gap: 80px;
     }
 
+    .majordivfooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-about {
+        margin-right: 170px;
+    }
+
+    .footer-services {
+        margin-right: 60px;
+    }
+
     .logo-img {
         width: 40%;
     }
@@ -1664,6 +1848,54 @@ footer {
         height: auto;
     }
 
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .divLeftNavbar {
+        position: absolute;
+        left: -120px;
+        top: 5px;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 35px;
+    }
+
+    #x {
+        display: none;
+    }
+
+    #check:checked~.menu #burger {
+        display: none;
+    }
+
+    #check:checked~.menu #x {
+        display: block;
+    }
+
+
+    .divRightNavbar {
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        width: 25%;
+        margin-left: 15%;
+        height: 0px;
+        overflow: hidden;
+        transition: .3s ease;
+        display: none;
+    }
+
+    #check:checked~.divRightNavbar {
+        height: 20%;
+    }
+
     .rightBannerLogo {
         width: 200px;
         height: 150%;
@@ -1677,7 +1909,7 @@ footer {
         flex-direction: column;
         margin-right: 35%;
         gap: 20px;
-
+        margin-top: 100px;
     }
 
     .firstTitle {
@@ -1744,6 +1976,7 @@ footer {
     .sec1-div2 {
         flex-direction: column;
         width: 90%;
+        margin-bottom: 80px;
     }
 
     #girl-with-laptop {
@@ -1773,6 +2006,9 @@ footer {
         align-items: flex-start;
     }
 
+    .sec1-div2-divs-content {
+        align-items: flex-start;
+    }
 
     /* section 2*/
 
@@ -1860,19 +2096,39 @@ footer {
     
     .div-background {
         justify-content: center;
+        width: 95%;
     }
-    
+
     .div1-background {
-        width: 80%;
-        margin-left: 35px;
+        width: 90%;
+        height: 90%;
     }
-    
+
     .div2-background {
-        width: 67%;
+        width: 90%;
+        height: 90%;
+    }
+
+    .zoom-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .design-a {
+        top: -280px;
+    }
+
+    .workplace {
+        width: 90%;
+        top: -100px;
     }
     
     .form-input {
-        width: 85%;
+        width: 90%;
+    }
+
+    #message {
+        width: 90%;
     }
     
     .form {
@@ -1917,6 +2173,30 @@ footer {
         gap: 80px;
     }
 
+    .majordivfooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-about {
+        margin-right: 220px;
+    }
+
+    .footer-services {
+        margin-right: 120px;
+    }
+
+    .footer-newsletter {
+        margin-right: 60px;
+    }
+
     .logo-img {
         width: 50%;
     }
@@ -1947,6 +2227,42 @@ footer {
         height: auto;
     }
 
+    .menu {
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 45px;
+    }
+
+    #x {
+        display: none;
+    }
+
+    #check:checked~.menu #burger {
+        display: none;
+    }
+
+    #check:checked~.menu #x {
+        display: block;
+    }
+
+
+    .divRightNavbar {
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        width: 25%;
+        margin-left: 15%;
+        height: 0px;
+        overflow: hidden;
+        transition: .3s ease;
+        display: none;
+    }
+
+    #check:checked~.divRightNavbar {
+        height: 20%;
+    }
+
     .logoNavbar {
         width: 75px;
         height: 60px;
@@ -1960,15 +2276,15 @@ footer {
     }
 
     .divLeftNavbar{
-        width: 5%;
-        justify-content: flex-start;
+        position: absolute;
+        left: -120px;
+        top: -10px;
     }
 
-    .divRightNavbar{
-        width: 95%;
-        justify-content: center;
-        flex-direction: row;
+    .divParentHeader{
+        margin-top: 100px;
     }
+
 
     .rightBannerLogo {
         width: 70%;
@@ -2002,6 +2318,7 @@ footer {
     .sec1-div2 {
         flex-direction: column;
         width: 90%;
+        margin-bottom: 80px;
     }
 
     #girl-with-laptop {
@@ -2109,19 +2426,39 @@ footer {
     
     .div-background {
         justify-content: center;
+        width: 95%;
     }
-    
+
     .div1-background {
-        width: 96%;
-        /* margin-left: 35px; */
+        width: 90%;
+        height: 90%;
     }
-    
+
     .div2-background {
-        width: 40%;
+        width: 90%;
+        height: 90%;
+    }
+
+    .zoom-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .design-a {
+        top: -280px;
+    }
+
+    .workplace {
+        width: 90%;
+        top: -100px;
     }
     
     .form-input {
-        width: 85%;
+        width: 88%;
+    }
+
+    #message {
+        width: 90%;
     }
     
     .form {
@@ -2138,15 +2475,15 @@ footer {
     }
     
     .design-a {
-        font-size: 11px;
+        font-size: 14px;
     }
     
     .workplace {
-        font-size: 16px;
+        font-size: 18px;
     }
     
     .read {
-        font-size: 12px;
+        font-size: 14px;
     }
     
     .section5-button {
@@ -2228,6 +2565,16 @@ footer {
     footer {
         width: 100%;
         height: auto;
+    }
+
+    .footer-div1 {
+        margin-top: 60px;
+        align-items: flex-start;
+    }
+
+    .majordivfooter {
+        margin-bottom: 100px;
+        align-items: flex-start;
     }
     
     .logo-img {

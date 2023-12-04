@@ -436,6 +436,7 @@ begin of the text header */
     text-decoration: none;
     color: white;
     text-align: center;
+    font-family: RobotoRegular;
 }
 
 .divButton{
@@ -545,6 +546,11 @@ begin of the text header */
     font-weight: bold;
     color: white;
     margin-left: 10px;
+    font-family: OswalRegular;
+}
+
+.p-modulo {
+    font-family: RobotoMedium;
 }
 
 .divRightSection3{
@@ -672,11 +678,13 @@ begin of the text header */
 .stats {
     font-size: 17px;
     color: #226c9c;
+    font-family: RobotoMedium;
 }
 
 .sec4-div2-ptitle {
     font-size: 35px;
     color: white;
+    font-family: RobotoBold;
 }
 
 .sec4-div2-ptitles {
@@ -686,6 +694,7 @@ begin of the text header */
 .sec4-div2-p {
     color: #5f6aa9;
     line-height: 1.5;
+    font-family: RobotoRegular;
 }
 
 .sec4-div2-a {
@@ -698,6 +707,7 @@ begin of the text header */
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: RobotoRegular;
 }
 
 .sec4-div2-a:hover {
@@ -739,6 +749,17 @@ begin of the text header */
     left: -70px;
 }
 
+#news {
+    font-family: RobotoMedium;
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+#blog-post {
+    font-family: RobotoBold;
+}
 
 .section5-div2 {
     height: 50%;
@@ -830,10 +851,11 @@ begin of the text header */
 
 
 .design-a {
-    font-weight: lighter;
     color: #a4a9b2;
     position: absolute;
     top: -155px;
+    font-family: RobotoMedium;
+    font-size: 13px;
 }
 
 .workplace {
@@ -841,11 +863,13 @@ begin of the text header */
     font-weight: bolder;
     position: absolute;
     top: -125px;
+    font-family: RobotoBold;
 }
 
 .read {
     position: absolute;
     top: -50px;
+    font-family: RobotoRegular;
 }
 
 .section5-div2 {
@@ -928,6 +952,7 @@ input::placeholder {
     background-color: #0ad3ef;
     border-radius: 30px;
     cursor: pointer;
+    font-family: RobotoRegular;
 }
 
 .section5-button:hover {
@@ -943,6 +968,7 @@ input::placeholder {
 #send {
     color: white;
     font-size: 30px;
+    font-family: RobotoBold;
 }
 
 #news {
@@ -953,6 +979,10 @@ input::placeholder {
 #blog-post {
     color: white;
     font-size: 33px;
+}
+
+#touch {
+    font-family: RobotoMedium;
 }
 
 
@@ -998,12 +1028,14 @@ footer {
 
 .copywright {
     color: #5c6db2;
+    font-family: RobotoRegular;
 }
 
 .footer-text {
     line-height: 1.5;
     color: #6073b7;
     font-size: 17px;
+    font-family: RobotoRegular;
 }
 
 .footer-about {
@@ -1045,6 +1077,7 @@ footer {
     text-decoration: none;
     color: #6073b7;
     font-size: 17px;
+    font-family: RobotoRegular;
 }
 
 .p-title {
@@ -1052,11 +1085,13 @@ footer {
     font-size: 18px;
     margin: 0;
     padding: 0;
+    font-family: RobotoMedium;
 }
 
 .address {
     color: #6073b7;
     line-height: 1.7;
+    font-family: RobotoRegular;
 }
 
 #news-email {
@@ -1065,6 +1100,7 @@ footer {
     width: 200px;
     height: 50px;
     color: #5c6db2;
+    font-family: RobotoRegular;
 }
 
 .paperplane {
@@ -1079,6 +1115,7 @@ footer {
 
 #terms {
     color: #6073b7;
+    font-family: RobotoRegular;
 }
 
 #terms-check {
